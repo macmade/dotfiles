@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="use_theme_colors" mtime="1423562401" type="bool" value="false"/>
+	<entry name="scrollback_lines" mtime="1423562401" type="int" value="5000"/>
+	<entry name="scrollback_unlimited" mtime="1422538791" type="bool" value="false"/>
+	<entry name="background_darkness" mtime="1423562438" type="float" value="0.96631580591201782"/>
+	<entry name="background_type" mtime="1423562401" type="string">
+		<stringvalue>transparent</stringvalue>
+	</entry>
+	<entry name="default_size_rows" mtime="1423562401" type="int" value="35"/>
+	<entry name="default_size_columns" mtime="1423562401" type="int" value="170"/>
+	<entry name="use_custom_default_size" mtime="1423562401" type="bool" value="true"/>
+	<entry name="font" mtime="1423562401" type="string">
+		<stringvalue>Monospace 9</stringvalue>
+	</entry>
+	<entry name="use_system_font" mtime="1423562401" type="bool" value="false"/>
+	<entry name="palette" mtime="1423562401" type="string">
+		<stringvalue>#666666666666:#B3B37D7D4948:#6C6C88884D4D:#A3A39C9C3938:#67678C8CB1B1:#A0A08282BDBD:#6F6FAFAFAFAF:#BFBFBFBFBFBF:#BFBFBFBFBFBF:#B3B37D7D4948:#6C6C88884D4D:#A3A39C9C3938:#67678C8CB1B1:#A0A08282BDBD:#6F6FAFAFAFAF:#FFFFFFFFFFFF</stringvalue>
+	</entry>
+	<entry name="alternate_screen_scroll" mtime="1423562401" type="bool" value="true"/>
+	<entry name="background_color" mtime="1423562401" type="string">
+		<stringvalue>#1D1D23232727</stringvalue>
+	</entry>
+	<entry name="visible_name" mtime="1423562413" type="string">
+		<stringvalue>Macmade</stringvalue>
+	</entry>
+	<entry name="bold_color" mtime="1423562401" type="string">
+		<stringvalue>#000000000000</stringvalue>
+	</entry>
+	<entry name="foreground_color" mtime="1423562401" type="string">
+		<stringvalue>#FFFFFFFFFFFF</stringvalue>
+	</entry>
+</gconf>

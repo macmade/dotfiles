@@ -17,7 +17,7 @@ let colors_name = "xs-labs"
 " General colors
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-hi Normal           ctermfg=white       ctermbg=black       cterm=NONE
+hi Normal           ctermfg=white       ctermbg=NONE        cterm=NONE
 hi Cursor           ctermfg=white       ctermbg=NONE        cterm=reverse
 hi CursorLine       ctermfg=gray        ctermbg=NONE        cterm=reverse
 hi MatchParen       ctermfg=white       ctermbg=darkyellow  cterm=NONE

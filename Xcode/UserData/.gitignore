@@ -1,0 +1,6 @@
+*
+!.gitignore
+!FontAndColorThemes/
+!FontAndColorThemes/*
+!KeyBindings/
+!KeyBindings/*

@@ -51,33 +51,30 @@ export GIT_EDITOR=vi
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# YASM
-export PATH=/usr/local/make/bin/:$PATH:/usr/local/xeos-build/yasm/bin/
-
 ################################################################################
 # Aliases
 ################################################################################
 
 alias ll="ls -alh"
-alias top="top -o cpu"
 alias ps="ps -axc -o pid,command,ppid,uid,gid,nice,pri,paddr,rss,vsz,%cpu,%mem,lstart,user"
-alias dna="cd ~/Documents/Macmade/DigiDNA/"
-alias mac="cd ~/Documents/Macmade/Development/Mac/"
-alias ios="cd ~/Documents/Macmade/Development/iOS/"
-alias github="cd ~/Documents/Macmade/Development/GitHub/"
-alias xeos="cd ~/Documents/Macmade/Development/GitHub/XEOS/"
-alias sw="cd ~/Documents/Macmade/SW-Source/"
-alias web="cd /Library/WebStart/"
 alias vps="ssh -l root 195.110.34.56"
-alias gcc="/usr/local/gcc/bin/gcc"
+
+if [[ `uname -s` == "Darwin" ]];                        then alias top="top -o cpu"; fi
+if [ -d ~/Documents/Macmade/DigiDNA/ ];                 then alias dna="cd ~/Documents/Macmade/DigiDNA/"; fi
+if [ -d ~/Documents/Macmade/Development/Mac/ ];         then alias mac="cd ~/Documents/Macmade/Development/Mac/"; fi
+if [ -d ~/Documents/Macmade/Development/iOS/ ];         then alias ios="cd ~/Documents/Macmade/Development/iOS/"; fi
+if [ -d ~/Documents/Macmade/Development/GitHub/ ];      then alias github="cd ~/Documents/Macmade/Development/GitHub/"; fi
+if [ -d ~/Documents/Macmade/Development/GitHub/XEOS/ ]; then alias xeos="cd ~/Documents/Macmade/Development/GitHub/XEOS/"; fi
+if [ -d ~/Documents/Macmade/SW-Source/ ];               then alias sw="cd  ~/Documents/Macmade/SW-Source/"; fi
+if [ -d /Library/WebStart/ ];                           then alias web="cd /Library/WebStart/"; fi
+if [ -f /usr/local/gcc/bin/gcc ];                       then alias gcc="/usr/local/gcc/bin/gcc"; fi
 
 ################################################################################
 # Additional Software
 ################################################################################
 
-
 # MacPorts
-export PATH=$PATH:/opt/local/bin
-
-# Homebrew
-export PATH=$PATH:/Users/macmade/Documents/Homebrew/bin
+if [ -d /opt/local/bin ];                   then export PATH=$PATH:/opt/local/bin; fi
+if [ -d ~/Documents/Homebrew/bin ];         then export PATH=$PATH:~/Documents/Homebrew/bin; fi
+if [ -d /usr/local/make/bin/ ];             then export PATH=/usr/local/make/bin/:$PATH; fi
+if [ -d /usr/local/xeos-build/yasm/bin/ ];  then export PATH=$PATH:/usr/local/xeos-build/yasm/bin/; fi

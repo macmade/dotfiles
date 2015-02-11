@@ -1,5 +1,5 @@
-dotfiles
-========
+Macmade's dotfiles
+==================
 
 [![Issues](http://img.shields.io/github/issues/macmade/dotfiles.svg?style=flat)](https://github.com/macmade/dotfiles/issues)
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg?style=flat)
@@ -9,7 +9,7 @@ dotfiles
 About
 -----
 
-Various configuration files I use.  
+These are the various configuration files I use on my computer systems.
 Feel free to use them as you like if you think they're useful to you.
 
 Repository Infos

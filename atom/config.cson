@@ -1,0 +1,20 @@
+"*":
+  editor:
+    fontSize: 12
+    showInvisibles: true
+    showIndentGuide: true
+    autoIndentOnPaste: false
+    tabLength: 4
+    invisibles: {}
+  core:
+    themes: [
+      "atom-dark-ui"
+      "atom-dark-syntax"
+    ]
+  "exception-reporting":
+    userId: "4a75b17d-001f-d63c-d0c4-b1ff64d431f5"
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: true
+    removeTrailingWhitespace: false

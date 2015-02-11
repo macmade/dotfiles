@@ -15,7 +15,7 @@ GIT_PS1_SHOWUPSTREAM="verbose"
 GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_STATESEPARATOR=" "
 
-. ~/zsh/git-prompt.zsh
+. ~/.zsh/git-prompt.zsh
 
 autoload -U promptinit && promptinit
 autoload -U colors && colors

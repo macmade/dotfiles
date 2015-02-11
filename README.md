@@ -9,7 +9,7 @@ Macmade's dotfiles
 About
 -----
 
-These are the various configuration files I use on my computer systems.
+These are the various configuration files I use on my computer systems.  
 Feel free to use them as you like if you think they're useful to you.
 
 Repository Infos

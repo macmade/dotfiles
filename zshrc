@@ -45,10 +45,10 @@ export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxxexgxbxdxcxf
 
 # SVN options
-export SVN_EDITOR=vi
+export SVN_EDITOR=vim
 
 # GIT options
-export GIT_EDITOR=vi
+export GIT_EDITOR=vim
 
 # Locale
 export LC_ALL=en_US.UTF-8

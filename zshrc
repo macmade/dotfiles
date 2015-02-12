@@ -19,6 +19,7 @@ GIT_PS1_STATESEPARATOR=" "
 
 autoload -U promptinit && promptinit
 autoload -U colors && colors
+autoload -U compinit && compinit
 
 setopt prompt_subst
 
@@ -30,6 +31,8 @@ SAVEHIST=1000
 HISTFILE=~/.zsh_history
 
 setopt share_history
+
+fpath=(~/.zsh $fpath)
 
 ################################################################################
 # Miscellaneous

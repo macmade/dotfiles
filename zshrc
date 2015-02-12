@@ -77,5 +77,5 @@ if [ -f /usr/local/gcc/bin/gcc ];                       then alias gcc="/usr/loc
 ################################################################################
 
 if [ -d /opt/local/bin ];                   then export PATH=$PATH:/opt/local/bin; fi
-if [ -d /usr/local/make/bin ];             then export PATH=/usr/local/make/bin:$PATH; fi
-if [ -d /usr/local/xeos-build/yasm/bin ];  then export PATH=$PATH:/usr/local/xeos-build/yasm/bin; fi
+if [ -d /usr/local/make/bin ];              then export PATH=/usr/local/make/bin:$PATH; fi
+if [ -d /usr/local/xeos-build/yasm/bin ];   then export PATH=$PATH:/usr/local/xeos-build/yasm/bin; fi

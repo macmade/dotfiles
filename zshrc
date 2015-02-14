@@ -62,15 +62,9 @@ alias ll="ls -alh"
 alias ps="ps -axc -o pid,command,ppid,uid,gid,nice,pri,paddr,rss,vsz,%cpu,%mem,lstart,user"
 alias vps="ssh -l root 195.110.34.56"
 
-if [[ `uname -s` == "Darwin" ]];                        then alias top="top -o cpu"; fi
-if [ -d ~/Documents/Macmade/DigiDNA/ ];                 then alias dna="cd ~/Documents/Macmade/DigiDNA/"; fi
-if [ -d ~/Documents/Macmade/Development/Mac/ ];         then alias mac="cd ~/Documents/Macmade/Development/Mac/"; fi
-if [ -d ~/Documents/Macmade/Development/iOS/ ];         then alias ios="cd ~/Documents/Macmade/Development/iOS/"; fi
-if [ -d ~/Documents/Macmade/Development/GitHub/ ];      then alias github="cd ~/Documents/Macmade/Development/GitHub/"; fi
-if [ -d ~/Documents/Macmade/Development/GitHub/XEOS/ ]; then alias xeos="cd ~/Documents/Macmade/Development/GitHub/XEOS/"; fi
-if [ -d ~/Documents/Macmade/SW-Source/ ];               then alias sw="cd  ~/Documents/Macmade/SW-Source/"; fi
-if [ -d /Library/WebStart/ ];                           then alias web="cd /Library/WebStart/"; fi
-if [ -f /usr/local/gcc/bin/gcc ];                       then alias gcc="/usr/local/gcc/bin/gcc"; fi
+if [[ `uname -s` == "Darwin" ]];        then alias top="top -o cpu"; fi
+if [ -d ~/Documents/Macmade/GitHub/ ];  then alias github="cd ~/Documents/Macmade/GitHub/"; fi
+if [ -f /usr/local/gcc/bin/gcc ];       then alias gcc="/usr/local/gcc/bin/gcc"; fi
 
 ################################################################################
 # Additional Software

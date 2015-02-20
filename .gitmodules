@@ -1,0 +1,3 @@
+[submodule "atom/packages/xs-atom-syntax"]
+	path = atom/packages/xs-atom-syntax
+	url = https://github.com/macmade/xs-atom-syntax.git

@@ -1,20 +1,20 @@
 "*":
-  editor:
-    fontSize: 12
-    showInvisibles: true
-    showIndentGuide: true
-    autoIndentOnPaste: false
-    tabLength: 4
-    invisibles: {}
-  core:
-    themes: [
-      "one-dark-ui"
-      "xs-atom-syntax"
-    ]
-  "exception-reporting":
-    userId: "4a75b17d-001f-d63c-d0c4-b1ff64d431f5"
-  welcome:
-    showOnStartup: false
-  whitespace:
-    ensureSingleTrailingNewline: true
-    removeTrailingWhitespace: false
+    editor:
+        fontSize:                    12
+        showInvisibles:              true
+        showIndentGuide:             true
+        autoIndentOnPaste:           false
+        tabLength:                   4
+        invisibles:                  {}
+    welcome:
+        showOnStartup:               false
+    whitespace:
+        ensureSingleTrailingNewline: true
+        removeTrailingWhitespace:    false
+    core:
+        themes: [
+            "atom-dark-ui"
+            "xs-atom-syntax"
+        ]
+    "exception-reporting":
+        userId: "4a75b17d-001f-d63c-d0c4-b1ff64d431f5"

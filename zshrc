@@ -61,9 +61,12 @@ export LANG=en_US.UTF-8
 alias ll="ls -alh"
 alias ps="ps -axc -o pid,command,ppid,uid,gid,nice,pri,paddr,rss,vsz,%cpu,%mem,lstart,user"
 alias vps="ssh -l root 195.110.34.56"
+alias git-master="git checkout master && git submodule foreach --recursive git checkout master"
+alias git-development="git checkout development && git submodule foreach --recursive git checkout development"
 
 if [[ `uname -s` == "Darwin" ]];        then alias top="top -o cpu"; fi
 if [ -d ~/Documents/Macmade/GitHub/ ];  then alias github="cd ~/Documents/Macmade/GitHub/"; fi
+if [ -d ~/Documents/Macmade/DigiDNA/ ]; then alias dna="cd ~/Documents/Macmade/DigiDNA/"; fi
 if [ -f /usr/local/gcc/bin/gcc ];       then alias gcc="/usr/local/gcc/bin/gcc"; fi
 
 ################################################################################

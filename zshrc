@@ -76,3 +76,20 @@ if [ -f /usr/local/gcc/bin/gcc ];       then alias gcc="/usr/local/gcc/bin/gcc";
 if [ -d /opt/local/bin ];                     then export PATH=$PATH:/opt/local/bin; fi
 if [ -d /usr/local/make/bin ];                then export PATH=/usr/local/make/bin:$PATH; fi
 if [ -d /usr/local/xeos-toolchain/yasm/bin ]; then export PATH=$PATH:/usr/local/xeos-toolchain/yasm/bin; fi
+
+################################################################################
+# GPG
+################################################################################
+
+if [[ `command -v gpg` ]]; then
+    
+    if test -f $HOME/.gpg-agent-info && kill -0 `cut -d: -f 2 $HOME/.gpg-agent-info` 2>/dev/null; then
+        GPG_AGENT_INFO=`cat $HOME/.gpg-agent-info | cut -c 16-`
+    else
+        eval `gpg-agent --daemon --no-grab --write-env-file $HOME/.gpg-agent-info`
+    fi
+
+    export GPG_TTY=`tty`
+    export GPG_AGENT_INFO
+    
+fi

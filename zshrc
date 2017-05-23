@@ -54,6 +54,9 @@ export GIT_EDITOR=vim
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
+# SSH agent
+ssh-add -A &> /dev/null
+
 ################################################################################
 # Aliases
 ################################################################################
@@ -93,3 +96,13 @@ if [[ `command -v gpg-agent` ]]; then
     export GPG_AGENT_INFO
     
 fi
+
+################################################################################
+# Travis
+################################################################################
+
+# [ -f /Users/macmade/.travis/travis.sh ] && source /Users/macmade/.travis/travis.sh
+# 
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

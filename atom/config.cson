@@ -1,22 +1,25 @@
 "*":
+  core:
+    telemetryConsent: "limited"
+    themes: [
+      "atom-dark-ui"
+      "xs-atom-syntax"
+    ]
   editor:
-    fontSize: 12
-    showInvisibles: true
-    showIndentGuide: true
     autoIndentOnPaste: false
-    tabLength: 4
+    fontSize: 12
     invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "4a75b17d-001f-d63c-d0c4-b1ff64d431f5"
+  "markdown-preview":
+    useGitHubStyle: true
+  minimap:
+    scrollAnimation: true
   welcome:
     showOnStartup: false
   whitespace:
     ensureSingleTrailingNewline: true
     removeTrailingWhitespace: false
-  core:
-    themes: [
-      "atom-dark-ui"
-      "xs-atom-syntax"
-    ]
-  "exception-reporting":
-    userId: "4a75b17d-001f-d63c-d0c4-b1ff64d431f5"
-  minimap:
-    scrollAnimation: true

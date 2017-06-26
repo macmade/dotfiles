@@ -78,6 +78,7 @@ if [ -f /usr/local/gcc/bin/gcc ];       then alias gcc="/usr/local/gcc/bin/gcc";
 
 if [ -d /opt/local/bin ];                     then export PATH=$PATH:/opt/local/bin; fi
 if [ -d /usr/local/make/bin ];                then export PATH=/usr/local/make/bin:$PATH; fi
+if [ -d /usr/local/jtool ];                   then export PATH=/usr/local/jtool:$PATH; fi
 if [ -d /usr/local/xeos-toolchain/yasm/bin ]; then export PATH=$PATH:/usr/local/xeos-toolchain/yasm/bin; fi
 
 ################################################################################

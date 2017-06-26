@@ -71,6 +71,7 @@ if [[ `uname -s` == "Darwin" ]];        then alias top="top -o cpu"; fi
 if [ -d ~/Documents/Macmade/GitHub/ ];  then alias github="cd ~/Documents/Macmade/GitHub/"; fi
 if [ -d ~/Documents/Macmade/DigiDNA/ ]; then alias dna="cd ~/Documents/Macmade/DigiDNA/"; fi
 if [ -f /usr/local/gcc/bin/gcc ];       then alias gcc="/usr/local/gcc/bin/gcc"; fi
+if [ -f /usr/local/bin/trash ];         then alias rm="/usr/local/bin/trash"; fi
 
 ################################################################################
 # Additional Software

@@ -1,0 +1,3 @@
+'.source.x86asm':
+  'editor':
+    'commentStart': '; '

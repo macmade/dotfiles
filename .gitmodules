@@ -1,3 +1,6 @@
 [submodule "atom/packages/xs-atom-syntax"]
 	path = atom/packages/xs-atom-syntax
 	url = https://github.com/macmade/xs-atom-syntax.git
+[submodule "zsh/zsh-autosuggestions"]
+	path = zsh/zsh-autosuggestions
+	url = git://github.com/zsh-users/zsh-autosuggestions

@@ -16,6 +16,7 @@ GIT_PS1_SHOWCOLORHINTS=1
 GIT_PS1_STATESEPARATOR=" "
 
 . ~/.zsh/git-prompt.sh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload -U promptinit && promptinit
 autoload -U colors && colors

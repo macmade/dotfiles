@@ -13,8 +13,8 @@ ForegroundColour = 255, 255, 255
 BackgroundColour =  29,  35,  39
 CursorColour     = 191, 191, 191
 
-Black            =  29,  35,  39
-BoldBlack        =  39,  45,  49
+Black            = 109, 115, 119
+BoldBlack        = 109, 115, 119
 Red              = 179, 125,  73
 BoldRed          = 179, 125,  73
 Green            = 108, 136,  77

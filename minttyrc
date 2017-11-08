@@ -1,0 +1,31 @@
+BoldAsFont    = no
+Transparency  = medium
+CursorType    = block
+Font          = Consolas
+AllowBlinking = yes
+Columns       = 240
+Rows          = 40
+BellSound     = yes
+BellFlash     = yes
+Term          = xterm
+
+ForegroundColour = 255, 255, 255
+BackgroundColour =  29,  35,  39
+CursorColour     = 191, 191, 191
+
+Black            =  29,  35,  39
+BoldBlack        =  39,  45,  49
+Red              = 179, 125,  73
+BoldRed          = 179, 125,  73
+Green            = 108, 136,  77
+BoldGreen        = 108, 136,  77
+Yellow           = 163, 156,  57
+BoldYellow       = 163, 156,  57
+Blue             = 103, 140, 177
+BoldBlue         = 103, 140, 177
+Magenta          = 160, 130, 189
+BoldMagenta      = 160, 130, 189
+Cyan             = 111, 175, 175
+BoldCyan         = 111, 175, 175
+White            = 191, 191, 191
+BoldWhite        = 191, 191, 191

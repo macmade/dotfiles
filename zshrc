@@ -58,6 +58,9 @@ export LANG=en_US.UTF-8
 # SSH agent
 ssh-add -A &> /dev/null
 
+# Path
+export PATH=/usr/local/bin:${PATH}:$(git --exec-path)
+
 ################################################################################
 # Aliases
 ################################################################################
@@ -65,6 +68,7 @@ ssh-add -A &> /dev/null
 alias ll="ls -alh"
 alias ps="ps -axc -o pid,command,ppid,uid,gid,nice,pri,paddr,rss,vsz,%cpu,%mem,lstart,user"
 alias vps="ssh -l root 195.110.34.56"
+alias phoenix="ssh -l timcupertino Phoenix-Server.local"
 alias git-master="git checkout master && git submodule foreach --recursive git checkout master"
 alias git-development="git checkout development && git submodule foreach --recursive git checkout development"
 
@@ -82,6 +86,8 @@ if [ -d /opt/local/bin ];                     then export PATH=$PATH:/opt/local/
 if [ -d /usr/local/make/bin ];                then export PATH=/usr/local/make/bin:$PATH; fi
 if [ -d /usr/local/jtool ];                   then export PATH=/usr/local/jtool:$PATH; fi
 if [ -d /usr/local/xeos-toolchain/yasm/bin ]; then export PATH=$PATH:/usr/local/xeos-toolchain/yasm/bin; fi
+if [ -d /usr/local/cling/bin ];               then export PATH=$PATH:/usr/local/cling/bin; fi
+if [ -d /usr/local/distcc/bin ];              then export PATH=$PATH:/usr/local/distcc/bin; fi
 
 ################################################################################
 # GPG

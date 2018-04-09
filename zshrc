@@ -90,21 +90,14 @@ if [ -d /usr/local/cling/bin ];               then export PATH=$PATH:/usr/local/
 if [ -d /usr/local/distcc/bin ];              then export PATH=$PATH:/usr/local/distcc/bin; fi
 
 ################################################################################
-# GPG
+# GPG / Windows
 ################################################################################
 
-# if [[ `command -v gpg-agent` ]]; then
-#     
-#     if test -f $HOME/.gpg-agent-info && kill -0 `cut -d: -f 2 $HOME/.gpg-agent-info` 2>/dev/null; then
-#         GPG_AGENT_INFO=`cat $HOME/.gpg-agent-info | cut -c 16-`
-#     else
-#         eval `gpg-agent --daemon --no-grab $HOME/.gpg-agent-info`
-#     fi
-# 
-#     export GPG_TTY=`tty`
-#     export GPG_AGENT_INFO
-#     
-# fi
+if [ -f /usr/bin/ssh-agent.exe ] && [ -f ~/.ssh/id_rsa ] && [ -z "$SSH_AUTH_SOCK" -a -x "/usr/bin/ssh-agent" ]; then
+    eval `/usr/bin/ssh-agent -s` > /dev/null
+    trap "kill $SSH_AGENT_PID" 0
+    ssh-add ~/.ssh/id_rsa
+fi
 
 export GPG_TTY=$(tty)
 

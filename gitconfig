@@ -1,0 +1,22 @@
+[user]
+	name = macmade
+	email = macmade@xs-labs.com
+	signingkey = D18B50E9
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[core]
+	excludesfile = ~/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[push]
+	default = current
+[commit]
+	gpgsign = true
+[include]
+    path = ~/.gitaliases

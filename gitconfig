@@ -20,3 +20,5 @@
 	gpgsign = true
 [include]
     path = ~/.gitaliases
+[pull]
+	rebase = true

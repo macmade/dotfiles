@@ -22,3 +22,5 @@
     path = ~/.gitaliases
 [pull]
 	rebase = true
+[credential]
+	helper = manager

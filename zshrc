@@ -70,8 +70,6 @@ alias ps="ps -axc -o pid,command,ppid,uid,gid,nice,pri,paddr,rss,vsz,%cpu,%mem,l
 alias g="git"
 alias vps="ssh -l root 195.110.34.56"
 alias phoenix="ssh -l build Phoenix-Server.local"
-alias git-master="git checkout master && git submodule foreach --recursive git checkout master"
-alias git-development="git checkout development && git submodule foreach --recursive git checkout development"
 
 if [[ `uname -s` == "Darwin" ]];        then alias top="top -o cpu"; fi
 if [ -d ~/Documents/Macmade/GitHub/ ];  then alias github="cd ~/Documents/Macmade/GitHub/"; fi

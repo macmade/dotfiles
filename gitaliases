@@ -96,10 +96,16 @@
   # diff - show changes but by word, not line
   dw = diff --word-diff
 
+  # diff - show all changes since the last commit
+  dh = diff HEAD
+
   ### clean ###
 
   # clean everything to be pristine
   cleanest = clean -ffdx
+  
+  # clean - removes untracked files
+  cfd = clean -fd
 
   ### grep ###
 
@@ -543,6 +549,7 @@
   uncommit = reset --soft HEAD~1
   unadd = reset HEAD
   unstage = reset HEAD
+  rh = reset HEAD
 
   # Discard changes in a (list of) file(s) in working tree
   discard = checkout --

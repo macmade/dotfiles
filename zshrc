@@ -18,6 +18,8 @@ GIT_PS1_STATESEPARATOR=" "
 . ~/.zsh/git-prompt.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=7'
+
 autoload -U promptinit && promptinit
 autoload -U colors && colors
 autoload -U compinit && compinit

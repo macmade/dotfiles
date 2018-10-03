@@ -26,7 +26,7 @@ setopt prompt_subst
 
 RPROMPT="[ %{$fg[green]%}%~%{$reset_color%} ] [ %{$fg[red]%}%D%{$reset_color%} ] [ %{$fg[yellow]%}%*%{$reset_color%} ]"
 precmd () { __git_ps1 "[ %{$fg[cyan]%}%m%{$reset_color%} ]> [ %{$fg[blue]%}TTY%l%{$reset_color%} ]> [ %{$fg[magenta]%}%n %#%{$reset_color%} ]
-" "> " "[ %s ]" }
+" "%{$fg[cyan]%}>%{$reset_color%} " "[ %s ] %%{$fg[cyan]%%}-%%{$reset_color%%}" }
 
 HISTSIZE=1000
 SAVEHIST=1000

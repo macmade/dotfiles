@@ -20,12 +20,12 @@ let colors_name = "xs-labs"
 hi Normal           ctermfg=white       ctermbg=NONE        cterm=NONE
 hi Cursor           ctermfg=white       ctermbg=NONE        cterm=reverse
 hi CursorLine       ctermfg=gray        ctermbg=NONE        cterm=reverse
-hi MatchParen       ctermfg=white       ctermbg=darkyellow  cterm=NONE
+hi MatchParen       ctermfg=white       ctermbg=yellow      cterm=NONE
 
-hi StatusLine       ctermfg=white       ctermbg=darkyellow  cterm=bold
-hi ColorColumn      ctermfg=white       ctermbg=darkgray    cterm=NONE
-hi FoldColumn       ctermfg=white       ctermbg=darkgray    cterm=bold
-hi Folded           ctermfg=white       ctermbg=darkgray    cterm=bold
+hi StatusLine       ctermfg=white       ctermbg=yellow      cterm=bold
+hi ColorColumn      ctermfg=white       ctermbg=gray        cterm=NONE
+hi FoldColumn       ctermfg=white       ctermbg=gray        cterm=bold
+hi Folded           ctermfg=white       ctermbg=gray        cterm=bold
 hi LineNr           ctermfg=black       ctermbg=gray        cterm=NONE
 
 hi Error            ctermfg=red         ctermbg=NONE        cterm=NONE
@@ -51,7 +51,7 @@ hi Search           ctermfg=NONE        ctermbg=NONE        cterm=NONE
 " Syntax highlighting
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-hi Comment          ctermfg=darkgray    ctermbg=NONE        cterm=NONE
+hi Comment          ctermfg=gray        ctermbg=NONE        cterm=NONE
 
 hi Keyword          ctermfg=blue        ctermbg=NONE        cterm=NONE
 hi Statement        ctermfg=blue        ctermbg=NONE        cterm=NONE

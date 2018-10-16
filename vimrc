@@ -250,3 +250,5 @@ set visualbell
 autocmd VimEnter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 autocmd VimEnter * wincmd l
+
+let NERDTreeShowHidden=1

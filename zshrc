@@ -82,7 +82,7 @@ if [ -d ~/Documents/Macmade/DigiDNA/ ]; then alias dna="cd ~/Documents/Macmade/D
 if [ -f /usr/local/gcc/bin/gcc ];       then alias gcc="/usr/local/gcc/bin/gcc"; fi
 if [ -f /usr/local/bin/trash ];         then alias rm="/usr/local/bin/trash"; fi
 
-if type -p bat > /dev/null 2>&1; then alias cat="/usr/local/bin/bat"; fi
+if type -p bat > /dev/null 2>&1; then alias cat="bat"; fi
 
 ################################################################################
 # Additional Software

@@ -70,7 +70,6 @@ export PATH=/usr/local/bin:${PATH}:$(git --exec-path)
 
 alias bb=bbedit
 alias ll="ls -alh"
-alias ps="ps -axc -o pid,command,ppid,uid,gid,nice,pri,paddr,rss,vsz,%cpu,%mem,lstart,user"
 alias g="git"
 alias vps="ssh -l macmade 45.79.77.24"
 alias vps-old="ssh -l root 195.110.34.56"

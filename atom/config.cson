@@ -14,8 +14,7 @@
     tabLength: 4
   "exception-reporting":
     userId: "4a75b17d-001f-d63c-d0c4-b1ff64d431f5"
-  "markdown-preview":
-    useGitHubStyle: true
+  "markdown-preview": {}
   minimap:
     scrollAnimation: true
   welcome:

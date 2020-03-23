@@ -20,7 +20,9 @@
   r = remote
   s = status
   w = whatchanged
-
+  
+  chicken = pull
+  
   ##
   # Short aliases for our frequent commands.
   #

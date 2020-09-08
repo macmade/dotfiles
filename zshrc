@@ -109,16 +109,6 @@ fi
 export GPG_TTY=$(tty)
 
 ################################################################################
-# Travis
-################################################################################
-
-# [ -f /Users/macmade/.travis/travis.sh ] && source /Users/macmade/.travis/travis.sh
-# 
-# export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-################################################################################
 # Tmux
 ################################################################################
 
@@ -140,3 +130,12 @@ if [ -d ~/Desktop/iMazing-Win/master ];      then alias iwm="cd ~/Desktop/iMazin
 if [ -d ~/Desktop/iMazing-Win/release ];     then alias iwr="cd ~/Desktop/iMazing-Win/release     && work"; fi
 if [ -d ~/Desktop/iMazing-Win/hotfix ];      then alias iwh="cd ~/Desktop/iMazing-Win/hotfix      && work"; fi
 if [ -d ~/Desktop/iMazing-Win/development ]; then alias iwd="cd ~/Desktop/iMazing-Win/development && work"; fi
+
+################################################################################
+# NVM
+################################################################################
+
+export NVM_DIR="$HOME/.nvm"
+
+if [ -d /usr/local/opt/nvm ]; then [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"; fi
+      

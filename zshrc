@@ -48,10 +48,8 @@ export CLICOLOR=1
 # Colors for the LS command
 export LSCOLORS=exfxcxdxbxxexgxbxdxcxf
 
-# SVN options
+# SCM Editors
 export SVN_EDITOR=vim
-
-# GIT options
 export GIT_EDITOR=vim
 
 # Locale
@@ -81,20 +79,23 @@ if [[ `uname -s` == "Darwin" ]];        then alias top="top -o cpu"; fi
 if [ -d ~/Documents/Macmade/GitHub/ ];  then alias github="cd ~/Documents/Macmade/GitHub/"; fi
 if [ -d ~/Documents/Macmade/DigiDNA/ ]; then alias dna="cd ~/Documents/Macmade/DigiDNA/"; fi
 if [ -f /usr/local/gcc/bin/gcc ];       then alias gcc="/usr/local/gcc/bin/gcc"; fi
-if [ -f /usr/local/bin/trash ];         then alias rm="/usr/local/bin/trash"; fi
-
-if type -p bat > /dev/null 2>&1; then alias cat="bat"; fi
+if [ -f /opt/homebrew/bin/trash ];      then alias rm="/opt/homebrew/bin/trash"; fi
+if [[ `uname -s` == "Darwin" ]];        then alias hot="pmset -g thermlog"; fi
 
 ################################################################################
 # Additional Software
 ################################################################################
 
 if [ -d /opt/local/bin ];                     then export PATH=$PATH:/opt/local/bin; fi
+if [ -d /opt/homebrew/bin ];                  then export PATH=$PATH:/opt/homebrew/bin; fi
 if [ -d /usr/local/make/bin ];                then export PATH=/usr/local/make/bin:$PATH; fi
 if [ -d /usr/local/jtool ];                   then export PATH=/usr/local/jtool:$PATH; fi
 if [ -d /usr/local/xeos-toolchain/yasm/bin ]; then export PATH=$PATH:/usr/local/xeos-toolchain/yasm/bin; fi
 if [ -d /usr/local/cling/bin ];               then export PATH=$PATH:/usr/local/cling/bin; fi
 if [ -d /usr/local/distcc/bin ];              then export PATH=$PATH:/usr/local/distcc/bin; fi
+if [ -d /usr/local/qemu/bin ];                then export PATH=$PATH:/usr/local/qemu/bin; fi
+
+if type -p bat > /dev/null 2>&1; then alias cat="bat"; fi
 
 ################################################################################
 # GPG / Windows

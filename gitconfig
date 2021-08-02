@@ -1,7 +1,7 @@
 [user]
 	name = macmade
 	email = macmade@xs-labs.com
-	signingkey = D18B50E9
+	signingkey = 82CF8E0FD43FA211D7645CE895CD6F07D18B50E9
 [filter "media"]
 	clean = git-media-clean %f
 	smudge = git-media-smudge %f

@@ -115,5 +115,7 @@
     "scm.alwaysShowRepositories": true,
     "editor.formatOnPaste": true,
     "workbench.iconTheme": "city-lights-icons-vsc",
-    "C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
+    "C_Cpp.clang_format_path": "/usr/local/llvm/bin/clang-format",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }

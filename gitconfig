@@ -29,3 +29,5 @@
 	required = true
 [init]
 	defaultBranch = main
+[rebase]
+	instructionFormat = [%an @ %ad] %s

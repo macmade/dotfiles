@@ -126,6 +126,9 @@ if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Win/master ];      then alias
 if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Win/release ];     then alias iwr="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Win/release     && work"; fi
 if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Win/hotfix ];      then alias iwh="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Win/hotfix      && work"; fi
 if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Win/development ]; then alias iwd="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Win/development && work"; fi
+if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Downloads ];       then alias downloads="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Downloads && work"; fi
+if [ -d ~/Documents/Macmade/DigiDNA/GitHub/DDNA-AppCache ];           then alias appcache="cd ~/Documents/Macmade/DigiDNA/GitHub/DDNA-AppCache      && work"; fi
+if [ -d ~/Documents/Macmade/DigiDNA/GitHub/DDNA-BuildCache ];         then alias buildcache="cd ~/Documents/Macmade/DigiDNA/GitHub/DDNA-BuildCache  && work"; fi
 
 if [ -d ~/Desktop/iMazing-Win/master ];      then alias iwm="cd ~/Desktop/iMazing-Win/master      && work"; fi
 if [ -d ~/Desktop/iMazing-Win/release ];     then alias iwr="cd ~/Desktop/iMazing-Win/release     && work"; fi

@@ -118,4 +118,5 @@
     "C_Cpp.clang_format_path": "/usr/local/llvm/bin/clang-format",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "security.workspace.trust.untrustedFiles": "open",
 }

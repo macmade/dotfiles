@@ -150,6 +150,9 @@
 
   ### merge ###
 
+  # merge without fastt-forward.
+  mnf = merge --no-ff
+
   # merge but without autocommit, and with a commit even if the merge resolved as a fast-forward.
   me = merge --no-commit --no-ff
   

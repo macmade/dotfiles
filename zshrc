@@ -49,8 +49,8 @@ export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxxexgxbxdxcxf
 
 # SCM Editors
-export SVN_EDITOR=vim
-export GIT_EDITOR=vim
+export SVN_EDITOR=nvim
+export GIT_EDITOR=nvim
 
 # Locale
 export LC_ALL=en_US.UTF-8
@@ -120,8 +120,8 @@ export GPG_TTY=$(tty)
 
 alias tk="tmux kill-session"
 
-alias work="tmux new-session \; split-window -h -p 40 \; selectp -t 0 \; split-window -p 50 \; selectp -t 2 \; split-window -p 50 \; split-window -p 30 \; selectp -t 0 \; send-keys \"clear && git status\" C-m \; selectp -t 1 \; send-keys \"clear && lazygit\" C-m \; selectp -t 2 \; send-keys \"clear && if [ -f README.md ]; then vim README.md; else vim .; fi\" C-m \; selectp -t 3 \; send-keys \"clear && tig\" C-m \; selectp -t 4 \; send-keys \"clear && git-branch-status --fetch-origin --keychain-item macmade-github\" C-m \; selectp -t 0\; attach"
-alias debug="tmux new-session \; send-keys \"clear && lldb\" C-m \; split-window \; send-keys \"clear && htop\" C-m \; selectp -t 0 \; send-keys \"file \" \; attach"
+if [ -f ~/.zsh/work.sh ];  then alias work="sh ~/.zsh/work.sh";  fi
+if [ -f ~/.zsh/debug.sh ]; then alias debug="sh ~/.zsh/debug.sh"; fi
 
 if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/master ];      then alias imm="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/master      && work"; fi
 if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/release ];     then alias imr="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/release     && work"; fi

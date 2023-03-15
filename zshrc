@@ -95,6 +95,11 @@ if [ -d /usr/local/cling/bin ];               then export PATH=$PATH:/usr/local/
 if [ -d /usr/local/distcc/bin ];              then export PATH=$PATH:/usr/local/distcc/bin; fi
 if [ -d /usr/local/qemu/bin ];                then export PATH=$PATH:/usr/local/qemu/bin; fi
 
+if [ -f /opt/homebrew/bin/nvim ]; then
+    alias vi=nvim
+    alias vim=nvim
+fi
+
 if type -p bat > /dev/null 2>&1; then alias cat="bat"; fi
 
 ################################################################################
@@ -115,7 +120,7 @@ export GPG_TTY=$(tty)
 
 alias tk="tmux kill-session"
 
-alias work="tmux new-session \; split-window -h -p 40 \; selectp -t 0 \; split-window -p 50 \; selectp -t 2 \; split-window -p 50 \; split-window -p 30 \; selectp -t 0 \; send-keys \"clear && git status\" C-m \; selectp -t 1 \; send-keys \"clear && lazygit\" C-m \; selectp -t 2 \; send-keys \"clear && vim\" C-m \; selectp -t 3 \; send-keys \"clear && tig\" C-m \; selectp -t 4 \; send-keys \"clear && git-branch-status --fetch-origin --keychain-item macmade-github\" C-m \; selectp -t 0\; attach"
+alias work="tmux new-session \; split-window -h -p 40 \; selectp -t 0 \; split-window -p 50 \; selectp -t 2 \; split-window -p 50 \; split-window -p 30 \; selectp -t 0 \; send-keys \"clear && git status\" C-m \; selectp -t 1 \; send-keys \"clear && lazygit\" C-m \; selectp -t 2 \; send-keys \"clear && vim .\" C-m \; selectp -t 3 \; send-keys \"clear && tig\" C-m \; selectp -t 4 \; send-keys \"clear && git-branch-status --fetch-origin --keychain-item macmade-github\" C-m \; selectp -t 0\; attach"
 alias debug="tmux new-session \; send-keys \"clear && lldb\" C-m \; split-window \; send-keys \"clear && htop\" C-m \; selectp -t 0 \; send-keys \"file \" \; attach"
 
 if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/master ];      then alias imm="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/master      && work"; fi

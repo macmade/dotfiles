@@ -2,7 +2,7 @@
     "editor.fontSize": 11,
     "editor.fontFamily": "Consolas, Menlo, Monaco, 'Courier New', monospace",
     "editor.renderWhitespace": "all",
-    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorSmoothCaretAnimation": "on",
     "files.insertFinalNewline": true,
     "workbench.view.alwaysShowHeaderActions": true,
     "workbench.editor.highlightModifiedTabs": true,

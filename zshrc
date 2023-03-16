@@ -17,7 +17,7 @@ GIT_PS1_SHOWUPSTREAM="verbose"
 GIT_PS1_SHOWCOLORHINTS=1
 
 if [[ $TERM == "xterm-kitty" ]]; then
-GIT_PS1_STATESEPARATOR="%{$fg[red]%} "$'\Uf14b'" %{$reset_color%}"
+GIT_PS1_STATESEPARATOR=" "$'\Uf14b'" "
 else
 GIT_PS1_STATESEPARATOR=" "
 fi

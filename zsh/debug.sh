@@ -1,10 +1,12 @@
 #!/bin/sh
 
+cwd=$(pwd)
+
 if [[ $TERM == "xterm-kitty" ]]; then
 
     kitty @ goto-layout splits > /dev/null
 
-    kitty @ launch --location=hsplit --cwd current zsh > /dev/null
+    kitty @ launch --location=hsplit --cwd $cwd zsh > /dev/null
     kitty @ set-window-logo --match id:-1 none
 
     kitty @ send-text --match id:-1 btm'\n' > /dev/null

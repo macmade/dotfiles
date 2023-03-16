@@ -1,10 +1,12 @@
 #!/bin/sh
 
+cwd=$(pwd)
+
 if [[ $TERM == "xterm-kitty" ]]; then
 
     kitty @ goto-layout splits > /dev/null
 
-    kitty @ launch --location=vsplit --cwd current zsh > /dev/null
+    kitty @ launch --location=vsplit --cwd $cwd zsh > /dev/null
     kitty @ set-window-logo --match recent:0 none
     kitty @ resize-window --match recent:0 --increment -20 > /dev/null
 
@@ -13,16 +15,16 @@ if [[ $TERM == "xterm-kitty" ]]; then
     fi
 
     kitty @ focus-window --match recent:2 > /dev/null
-    kitty @ launch --location=hsplit --cwd current zsh  > /dev/null
+    kitty @ launch --location=hsplit --cwd $cwd zsh  > /dev/null
     kitty @ set-window-logo --match recent:0 none
     kitty @ send-text --match recent:0 lazygit'\n' > /dev/null
 
     kitty @ focus-window --match recent:2 > /dev/null
-    kitty @ launch --location=hsplit --cwd current zsh  > /dev/null
+    kitty @ launch --location=hsplit --cwd $cwd zsh  > /dev/null
     kitty @ set-window-logo --match recent:0 none
     kitty @ send-text --match recent:0 tig'\n' > /dev/null
 
-    kitty @ launch --location=hsplit --cwd current zsh  > /dev/null
+    kitty @ launch --location=hsplit --cwd $cwd zsh  > /dev/null
     kitty @ set-window-logo --match recent:0 none
     kitty @ resize-window --match recent:0 --increment -20 --axis vertical > /dev/null
     kitty @ send-text --match recent:0 git-branch-status'\n' > /dev/null

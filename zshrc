@@ -48,9 +48,9 @@ precmd () { __git_ps1 "%{$fg[cyan]%}"$'\Ue0b6'"%{$reset_color%}%{$bg[cyan]%} "$'
 
 else
 
-RPROMPT="%{$bg[yellow]%}<[ %* ]%{$reset_color%}%{$bg[red]%}<[ %D ]%{$reset_color%}%{$bg[green]%}<[ TTY%l ]%{$reset_color%}"
+RPROMPT="%{$bg[yellow]%} %* %{$reset_color%}%{$bg[red]%} %D %{$reset_color%}%{$bg[green]%} TTY%l %{$reset_color%}"
 
-precmd () { __git_ps1 "%{$bg[cyan]%}[ %m ]>%{$reset_color%}%{$bg[blue]%}[ %n %# ]>%{$reset_color%}%{$bg[magenta]%}[ %~ ]>%{$reset_color%}
+precmd () { __git_ps1 "%{$bg[cyan]%} %m %{$reset_color%}%{$bg[blue]%} %n %# %{$reset_color%}%{$bg[magenta]%} %~ %{$reset_color%}
 " "%{$fg[cyan]%}>%{$reset_color%} " "%s%%{$fg[cyan]%%} %%{$reset_color%%}" }
 
 fi

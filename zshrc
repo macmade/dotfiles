@@ -115,6 +115,7 @@ if [ -f /usr/bin/ssh-agent.exe ] && [ -f ~/.ssh/id_rsa ] && [ -z "$SSH_AUTH_SOCK
 fi
 
 export GPG_TTY=$(tty)
+export XDG_CONFIG_HOME="$HOME/.config"
 
 ################################################################################
 # Tmux
@@ -149,4 +150,3 @@ if [ -d ~/Desktop/iMazing-Win/development ]; then alias iwd="cd ~/Desktop/iMazin
 export NVM_DIR="$HOME/.nvm"
 
 if [ -d /usr/local/opt/nvm ]; then [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"; fi
-      

@@ -95,9 +95,11 @@ if [ -d /usr/local/cling/bin ];               then export PATH=$PATH:/usr/local/
 if [ -d /usr/local/distcc/bin ];              then export PATH=$PATH:/usr/local/distcc/bin; fi
 if [ -d /usr/local/qemu/bin ];                then export PATH=$PATH:/usr/local/qemu/bin; fi
 
-if [ -f /opt/homebrew/bin/nvim ]; then
-    alias vi=nvim
-    alias vim=nvim
+if [[ $TERM == "xterm-kitty" ]]; then
+    if [ -f /opt/homebrew/bin/nvim ]; then
+        alias vi=nvim
+        alias vim=nvim
+    fi
 fi
 
 if type -p bat > /dev/null 2>&1; then alias cat="bat"; fi

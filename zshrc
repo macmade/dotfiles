@@ -11,9 +11,22 @@
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 GIT_PS1_SHOWUNTRACKEDFILES=1
+GIT_PS1_SHOWCONFLICTSTATE=1
+GIT_PS1_OMITSPARSESTATE=1
 GIT_PS1_SHOWUPSTREAM="verbose"
 GIT_PS1_SHOWCOLORHINTS=1
+
+if [[ $TERM == "xterm-kitty" ]]; then
+GIT_PS1_STATESEPARATOR="%{$fg[red]%} "$'\Uf14b'" %{$reset_color%}"
+else
 GIT_PS1_STATESEPARATOR=" "
+fi
+
+if [[ $TERM == "xterm-kitty" ]]; then
+GIT_PS1_REMOTESEPARATOR=" "$'\Uebcb'"  "
+else
+GIT_PS1_REMOTESEPARATOR=" "
+fi
 
 . ~/.zsh/git-prompt.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -26,9 +39,21 @@ autoload -U compinit && compinit
 
 setopt prompt_subst
 
-RPROMPT="%{$bg[green]%}[ TTY%l ]>%{$reset_color%}%{$bg[red]%}[ %D ]>%{$reset_color%}%{$bg[yellow]%}[ %* ]%{$reset_color%}"
-precmd () { __git_ps1 "%{$bg[cyan]%}[ %m ]>%{$reset_color%}%{$bg[blue]%}[ %n %# ]>%{$reset_color%}%{$bg[magenta]%}[ %~ ]%{$reset_color%}
-" "%{$fg[cyan]%}>%{$reset_color%} " "{ %s }%%{$fg[cyan]%%} -%%{$reset_color%%}" }
+if [[ $TERM == "xterm-kitty" ]]; then
+
+RPROMPT="%{$fg[yellow]%}"$'\Ue0b2'"%{$reset_color%}%{$bg[yellow]%} "$'\Ue641'" %* %{$fg[red]%}"$'\Ue0b2'"%{$reset_color%}%{$bg[red]%} "$'\Uf133'" %D %{$fg[green]%}"$'\Ue0b2'"%{$reset_color%}%{$bg[green]%} "$'\Uea85'" TTY%l %{$reset_color%}%{$fg[green]%}"$'\Ue0b4'"%{$reset_color%}"
+
+precmd () { __git_ps1 "%{$fg[cyan]%}"$'\Ue0b6'"%{$reset_color%}%{$bg[cyan]%} "$'\Uf822'" %m %{$fg[cyan]%}%{$bg[blue]%}"$'\Ue0b0'"%{$reset_color%}%{$bg[blue]%} "$'\Uf2c0'" %n %# %{$fg[blue]%}%{$bg[magenta]%}"$'\Ue0b0'"%{$reset_color%}%{$bg[magenta]%} "$'\Uea83'" %~ %{$reset_color%}%{$fg[magenta]%}"$'\Ue0b0'"%{$reset_color%}
+" "%{$fg[cyan]%}"$'\Uf120'"  %{$reset_color%}" $'\Uea68'" %s %%{$reset_color%%}" }
+
+else
+
+RPROMPT="%{$bg[yellow]%}<[ %* ]%{$reset_color%}%{$bg[red]%}<[ %D ]%{$reset_color%}%{$bg[green]%}<[ TTY%l ]%{$reset_color%}"
+
+precmd () { __git_ps1 "%{$bg[cyan]%}[ %m ]>%{$reset_color%}%{$bg[blue]%}[ %n %# ]>%{$reset_color%}%{$bg[magenta]%}[ %~ ]>%{$reset_color%}
+" "%{$fg[cyan]%}>%{$reset_color%} " "%s%%{$fg[cyan]%%} %%{$reset_color%%}" }
+
+fi
 
 HISTSIZE=1000
 SAVEHIST=1000

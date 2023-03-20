@@ -11,6 +11,10 @@
 	required = true
 [core]
 	excludesfile = ~/.gitignore_global
+	preloadindex = true
+	fscache = true
+[gc]
+	auto = 256
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 

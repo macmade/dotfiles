@@ -6,6 +6,11 @@ if [[ $TERM == "xterm-kitty" ]]; then
 
     kitty @ goto-layout splits > /dev/null
 
+    kitty @ launch --location=hsplit --cwd $cwd zsh  > /dev/null
+    kitty @ set-window-logo --match recent:0 none
+    kitty @ send-text --match recent:0 lazygit'\n' > /dev/null
+
+    kitty @ focus-window --match recent:2 > /dev/null
     kitty @ launch --location=vsplit --cwd $cwd zsh > /dev/null
     kitty @ set-window-logo --match recent:0 none
     kitty @ resize-window --match recent:0 --increment -20 > /dev/null
@@ -14,22 +19,7 @@ if [[ $TERM == "xterm-kitty" ]]; then
     else                      kitty @ send-text --match recent:0 nvim .'\n' > /dev/null
     fi
 
-    kitty @ focus-window --match recent:2 > /dev/null
-    kitty @ launch --location=hsplit --cwd $cwd zsh  > /dev/null
-    kitty @ set-window-logo --match recent:0 none
-    kitty @ send-text --match recent:0 lazygit'\n' > /dev/null
-
-    kitty @ focus-window --match recent:2 > /dev/null
-    kitty @ launch --location=hsplit --cwd $cwd zsh  > /dev/null
-    kitty @ set-window-logo --match recent:0 none
-    kitty @ send-text --match recent:0 tig'\n' > /dev/null
-
-    kitty @ launch --location=hsplit --cwd $cwd zsh  > /dev/null
-    kitty @ set-window-logo --match recent:0 none
-    kitty @ resize-window --match recent:0 --increment -20 --axis vertical > /dev/null
-    kitty @ send-text --match recent:0 git-branch-status'\n' > /dev/null
-
-    kitty @ focus-window --match recent:5 > /dev/null
+    kitty @ focus-window --match recent:1 > /dev/null
     kitty @ send-text --match recent:0 clear'\n'git status'\n' > /dev/null
 
 else

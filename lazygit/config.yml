@@ -1,0 +1,55 @@
+gui:
+  windowSize: 'normal'
+  scrollHeight: 2
+  scrollPastBottom: false
+  sidePanelWidth: 0.3
+  expandFocusedSidePanel: true
+  mainPanelSplitMode: 'flexible'
+  theme:
+    activeBorderColor:
+      - cyan
+      - bold
+    inactiveBorderColor:
+      - '#666666'
+    optionsTextColor:
+      - magenta
+    selectedLineBgColor:
+      - '#2D323B'
+    selectedRangeBgColor:
+      - '#2D323B'
+    cherryPickedCommitBgColor:
+      - cyan
+    cherryPickedCommitFgColor:
+      - blue
+    unstagedChangesColor:
+      - red
+    defaultFgColor:
+      - default
+  authorColors:
+    'macmade': '#6FAFAF'
+  branchColors:
+    'main': '#6FAFAF'
+    'master': '#6FAFAF'
+  commitLength:
+    show: true
+  mouseEvents: true
+  skipUnstageLineWarning: false
+  skipStashWarning: false
+  showFileTree: true
+  showListFooter: true
+  showRandomTip: false
+  showBottomLine: true
+  showCommandLog: true
+  showIcons: true
+  border: 'single'
+git:
+  paging:
+    colorArg: always
+    useConfig: true
+  autoFetch: true
+  autoRefresh: true
+  parseEmoji: true
+refresher:
+  refreshInterval: 5
+  fetchInterval: 60
+notARepository: 'skip'

@@ -52,7 +52,7 @@ git:
   parseEmoji: true
   log:
     showGraph: 'always'
-    showWholeGraph: true
+    showWholeGraph: false
 refresher:
   refreshInterval: 5
   fetchInterval: 60

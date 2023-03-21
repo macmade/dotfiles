@@ -121,9 +121,14 @@ if [ -d /usr/local/distcc/bin ];              then export PATH=$PATH:/usr/local/
 if [ -d /usr/local/qemu/bin ];                then export PATH=$PATH:/usr/local/qemu/bin; fi
 
 if [[ $TERM == "xterm-kitty" ]]; then
+
     if [ -f /opt/homebrew/bin/nvim ]; then
         alias vi=nvim
         alias vim=nvim
+    fi
+
+    if [ -f /opt/homebrew/bin/lsd ]; then
+        alias ls=lsd
     fi
 fi
 

@@ -1,0 +1,33 @@
+classic: false
+blocks:
+  - name
+  - size
+  - user
+  - group
+  - permission
+  - date
+color:
+  when: auto
+  theme: ~/.config/lsd/macmade.yaml
+date: '+%d %b %Y %H:%M'
+dereference: false
+display: all
+icons:
+  when: auto
+  theme: fancy
+  separator: " "
+indicators: false
+layout: grid
+recursion:
+  enabled: false
+size: default
+permission: rwx
+sorting:
+  column: name
+  reverse: false
+  dir-grouping: first
+no-symlink: false
+total-size: false
+hyperlink: auto
+symlink-arrow: ⇒
+header: false

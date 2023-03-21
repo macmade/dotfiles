@@ -2,7 +2,7 @@ gui:
   windowSize: 'normal'
   scrollHeight: 2
   scrollPastBottom: false
-  sidePanelWidth: 0.3
+  sidePanelWidth: 0.5
   expandFocusedSidePanel: true
   mainPanelSplitMode: 'flexible'
   theme:
@@ -26,10 +26,11 @@ gui:
     defaultFgColor:
       - default
   authorColors:
-    'macmade': '#6FAFAF'
+    'macmade': cyan
+    '*': magenta
   branchColors:
-    'main': '#6FAFAF'
-    'master': '#6FAFAF'
+    'main': cyan
+    'master': cyan
   commitLength:
     show: true
   mouseEvents: true
@@ -49,6 +50,9 @@ git:
   autoFetch: true
   autoRefresh: true
   parseEmoji: true
+  log:
+    showGraph: 'always'
+    showWholeGraph: true
 refresher:
   refreshInterval: 5
   fetchInterval: 60

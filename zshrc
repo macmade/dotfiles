@@ -43,8 +43,8 @@ if [[ $TERM == "xterm-kitty" ]]; then
 
 RPROMPT="%{$fg[yellow]%}"$'\Ue0b2'"%{$reset_color%}%{$bg[yellow]%} "$'\Ue641'" %* %{$fg[red]%}"$'\Ue0b2'"%{$reset_color%}%{$bg[red]%} "$'\Uf133'" %D %{$fg[green]%}"$'\Ue0b2'"%{$reset_color%}%{$bg[green]%} "$'\Uea85'" TTY%l %{$reset_color%}%{$fg[green]%}"$'\Ue0b4'"%{$reset_color%}"
 
-precmd () { __git_ps1 "%{$fg[cyan]%}"$'\Ue0b6'"%{$reset_color%}%{$bg[cyan]%} "$'\Uf822'" %m %{$fg[cyan]%}%{$bg[blue]%}"$'\Ue0b0'"%{$reset_color%}%{$bg[blue]%} "$'\Uf2c0'" %n %# %{$fg[blue]%}%{$bg[magenta]%}"$'\Ue0b0'"%{$reset_color%}%{$bg[magenta]%} "$'\Uea83'" %~ %{$reset_color%}%{$fg[magenta]%}"$'\Ue0b0'"%{$reset_color%}
-" "%{$fg[cyan]%}"$'\Uf120'"  %{$reset_color%}" $'\Uea68'" %s %%{$reset_color%%}" }
+precmd () { __git_ps1 "%{$fg[cyan]%}"$'\U256d'$'\U2574'$'\Ue0b6'"%{$reset_color%}%{$bg[cyan]%} "$'\Uf822'" %m %{$fg[cyan]%}%{$bg[blue]%}"$'\Ue0b0'"%{$reset_color%}%{$bg[blue]%} "$'\Uf2c0'" %n %# %{$fg[blue]%}%{$bg[magenta]%}"$'\Ue0b0'"%{$reset_color%}%{$bg[magenta]%} "$'\Uea83'" %~ %{$reset_color%}%{$fg[magenta]%}"$'\Ue0b0'"%{$reset_color%}
+%{$fg[cyan]%}"$'\U2570'$'\U2574'"%{$reset_color%}" "%{$fg[cyan]%}"$'\Uf120'"  %{$reset_color%}" $'\Uea68'" %s %%{$reset_color%%}" }
 
 else
 

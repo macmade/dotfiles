@@ -156,6 +156,7 @@ alias tk="tmux kill-session"
 if [ -f ~/.zsh/work.sh ];    then alias work="sh ~/.zsh/work.sh";  fi
 if [ -f ~/.zsh/debug.sh ];   then alias debug="sh ~/.zsh/debug.sh"; fi
 if [ -f ~/.zsh/imazing.sh ]; then alias imazing="sh ~/.zsh/imazing.sh"; fi
+if [ -f ~/.zsh/release.sh ]; then alias release="sh ~/.zsh/release.sh"; fi
 
 if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/master ];            then alias imm="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/master            && work"; fi
 if [ -d ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/release ];           then alias imr="cd ~/Documents/Macmade/DigiDNA/GitHub/iMazing-Mac/release           && work"; fi

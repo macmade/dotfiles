@@ -12,7 +12,7 @@ if [[ $TERM == "xterm-kitty" ]]; then
 
     kitty @ launch --location=hsplit --cwd $cwd zsh  > /dev/null
     kitty @ set-window-logo --match recent:0 none
-    kitty @ resize-window --match recent:0 --axis vertical --increment -200 > /dev/null
+    kitty @ resize-window --match recent:0 --axis vertical --increment -500 > /dev/null
     kitty @ send-text --match recent:0 statusbar'\n' > /dev/null
 
     kitty @ focus-window --match recent:3 > /dev/null
@@ -25,6 +25,7 @@ if [[ $TERM == "xterm-kitty" ]]; then
     fi
 
     kitty @ focus-window --match recent:1 > /dev/null
+    kitty @ set-window-logo --match recent:0 ~/.kitty/logo.png
     kitty @ send-text --match recent:0 clear'\n'git status'\n' > /dev/null
 
 else
